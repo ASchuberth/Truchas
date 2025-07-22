@@ -39,3 +39,13 @@
 
 # debug information files
 *.dwo
+
+
+# Python
+.venv/
+
+# CMake
+build/
+
+# VSCode
+.vscode/

@@ -1,0 +1,10 @@
+#pragma once 
+
+namespace TRUCHAS_APP_NAMESPACE {
+namespace config {
+
+static constexpr auto vert_shader_file_path = "@VERT_SHADER_FILE_PATH@";    
+static constexpr auto frag_shader_file_path = "@FRAG_SHADER_FILE_PATH@" ;   
+
+}
+}
