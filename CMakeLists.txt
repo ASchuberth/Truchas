@@ -7,12 +7,7 @@ cmake_minimum_required(VERSION 3.15)
 
 project(truchas VERSION 0.1.0)
 
-#=========================================
-# C++/Compiler Options
-#=========================================
 
-# Must be called in top-level CMakeLists.txt
-enable_testing()
 
 
 #=========================================
@@ -59,6 +54,7 @@ target_include_directories(pch_interface INTERFACE ${CMAKE_SOURCE_DIR}/src)
 add_subdirectory(docs/)
 add_subdirectory(test/)
 
+
 #=========================================
 # Libraries
 #=========================================
@@ -103,3 +99,10 @@ endif(WIN32)
 if(UNIX)
     execute_process(COMMAND bash ${CMAKE_CURRENT_LIST_DIR}/shaders/compile_shaders.sh ${CMAKE_CURRENT_LIST_DIR}/shaders/)
 endif(UNIX)
+
+#=========================================
+# Testing Setup
+#=========================================
+
+# Must be called in top-level CMakeLists.txt
+enable_testing()
